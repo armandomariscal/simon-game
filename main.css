@@ -1,0 +1,42 @@
+body {
+    vertical-align: middle;
+}
+
+table {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  height: 100px;
+}
+
+.simon {
+  background-color: red;
+  width: 250px;
+  height: 250px;
+  width: 100%;
+  height: 100px;
+}
+
+.tl {
+  background-color: red;
+  border-radius: 50px 0px 0px 0px;
+}
+
+.tr {
+  background-color: yellow;
+  border-radius: 0px 50px 0px 0px;
+}
+
+.bl {
+  background-color: blue;
+  border-radius: 0px 0px 0px 50px;
+}
+
+.br {
+  background-color: green;
+  border-radius: 0px 0px 50px 0px;
+}
+
+.off {
+  opacity: 0.3;
+}

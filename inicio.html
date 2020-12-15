@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+        background-color: black;
+      }
+      h1 {
+color: cyan;
+      }
+    </style>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Aventura de matematicas</h1>
+    <table>
+      <tr>
+        <td>
+          <div class="simon tl off"></div>
+        </td>
+        <td>
+          <div class="simon tr off"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="simon bl off"></div>
+        </td>
+        <td>
+          <div class="simon br off"></div>
+        </td>
+      </tr>
+    </table>
+
+    <audio preload='auto' id="jump">
+     <source src="jump.mp3" type="audio/mpeg" >
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
