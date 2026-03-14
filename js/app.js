@@ -28,4 +28,6 @@ $(function(){
 
     });
 
+    var APP_VERSION = "1.0.0";
+    $("#app-version").text(APP_VERSION);
 });
