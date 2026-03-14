@@ -1,0 +1,56 @@
+body{
+    background:#0a0a0a;
+    color:#00ffcc;
+    font-family:'Press Start 2P', monospace;
+    text-align:center;
+}
+
+h1{
+    margin-top:30px;
+}
+
+#game-board{
+    width:320px;
+    height:320px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.simon-btn{
+    width:150px;
+    height:150px;
+    border-radius:20px;
+    cursor:pointer;
+    opacity:0.5;
+}
+
+.simon-btn.active{
+    opacity:1;
+    transform:scale(1.05);
+    box-shadow:0 0 20px white;
+}
+
+.red{ background:#ff4c4c;}
+.green{ background:#13ff7c;}
+.blue{ background:#1c8cff;}
+.yellow{ background:#fffb00;}
+
+#controls{
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    font-family:'Press Start 2P';
+    cursor:pointer;
+}
+
+#score{
+    margin-top:20px;
+}
+
+#ranking{
+    margin-top:40px;
+}
