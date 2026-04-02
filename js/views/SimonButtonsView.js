@@ -11,6 +11,12 @@ var SimonButtonsView = Backbone.View.extend({
         this.game = options.game;
 
         this.sound = new Audio("assets/sounds/simon-beep.mp3");
+        this.sounds = {
+            blue: new Audio("assets/sounds/blue-beep.mp3"),
+            green: new Audio("assets/sounds/green-beep.mp3"),
+            red: new Audio("assets/sounds/red-beep.mp3"),
+            yellow: new Audio("assets/sounds/yellow-beep.mp3")
+        };
 
         this.listenTo(this.game,"play:sequence",this.playSequence);
 
@@ -22,8 +28,11 @@ var SimonButtonsView = Backbone.View.extend({
 
         var color = $(e.currentTarget).data("color");
 
-        this.sound.currentTime = 0;
-        this.sound.play();
+        var sound = this.sounds[color];
+        if (sound) {
+            sound.currentTime = 0;
+            sound.play();
+        }
 
         this.flash(color);
 
@@ -53,8 +62,13 @@ var SimonButtonsView = Backbone.View.extend({
 
             if(i>=seq.length) return;
 
-            self.sound.currentTime = 0;
-            self.sound.play();
+            var color = seq[i];
+            var sound = self.sounds[color];
+
+            if (sound) {
+                sound.currentTime = 0;
+                sound.play();
+            }
 
             self.flash(seq[i]);
 
